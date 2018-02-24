@@ -11,9 +11,9 @@ class ImgFigure extends Component {
     handleClick(e) {
 
         if (this.props.arrange.isCenter) {
-            this.props.inverse();
+            this.props.inverse();  // 调用父组件方法 旋转
         } else {
-            this.props.center();
+            this.props.center();  // 调用父组件方法 居中
         }
 
 
@@ -26,11 +26,11 @@ class ImgFigure extends Component {
         let styleObj = {};
         let styleObj2 = {};
 
-        // if props assigns the position of pic, use it
+        // 如果props属性中指定了这张图片位置，则使用
         if (this.props.arrange.pos) {
             styleObj = this.props.arrange.pos;
         }
-        // if props assigns the rotation degree of pic, use it
+        // 如果图片的旋转角度有值且不为0，添加旋转角度
         if (this.props.arrange.rotate) {
             (['MozTransform', 'msTransform', 'WebkitTransform', 'transform']).forEach(function (value) {
                 styleObj2[value] = 'rotate(' + this.props.arrange.rotate + 'deg)';
@@ -43,6 +43,7 @@ class ImgFigure extends Component {
         }
 
         let imgFigureClassName = 'img-figure';
+        // 调用父组件的参数
         imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse' : '';
 
         return(

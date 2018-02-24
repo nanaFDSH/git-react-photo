@@ -15,7 +15,7 @@
   background-color: #888;
   transform: scale(1);
 }
-.controller-unit.is-center::after {
+.controller-unit.is-center:after {
   color: #fff;
   font-family: "icons-turn-arrow";
   font-size: 80%;

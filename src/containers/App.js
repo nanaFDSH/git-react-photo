@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <PhotoWall/>
+        <div className="txt"><a href={'https://github.com/nanaFDSH/git-react-photo'}>github地址</a></div>
       </div>
     );
   }
