@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "icons-turn-arrow";
+  src: url("../../common/fonts/icons/turn-arrow.eot") format("embedded-opentype"), url("../../common/fonts/icons/turn-arrow.woff") format("woff"), url("../../common/fonts/icons/turn-arrow.ttf") format("truetype"), url("../../common/fonts/icons/turn-arrow.svg") format("svg");
+}
+.stage {
+  position: relative;
+  width: 100%;
+  height: 680px;
+}
+.stage .img-sec {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ddd;
+  perspective: 1800px;
+}
+.stage .controller-nav {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  z-index: 101;
+  width: 100%;
+  text-align: center;
+}
